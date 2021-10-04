@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>BRASIL Finanças</title>
+    <link rel="stylesheet" href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/form.css">
+    <link rel="icon" href="_imagens/icon.png">
+    <script>
+        function Enviar() {
+            var mail = document.getElementById("campoEmail");
+            var nome = document.getElementById("campoNome");
+                if (nome.value != "" && mail.value != "") {
+                    alert('Obrigado Sr(a) ' + nome.value + ', sua mensagem foi encaminhada com sucesso!');
+                }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+        <hgroup style="background-image: url(_imagens/fundo1.jpg); border: 1px solid white; box-shadow: 1px 1px 4px black">
+        <h1 style="text-align:left; position: relative; margin: 30px;color: white; font-size: 30px;"><b><a href="br_financas.html" style="text-decoration:none; color:white"><span style="color:rgb(81, 205, 50); font-size:35px;">B</span><span style="color:yellow; font-size:35px;">R</span><span style="font-size: 35px">ASIL</span> Finanças</a></b></h1>
+        </hgroup>
+
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul>
+                <li><a href="index.html"><b>Home</b></a></li>
+                <li><a href="noticias.html"><b>Notícias</b></a></li>
+                <li><a href="indicadores.html"><b>Indicadores Econômicos</b></a></li>
+                <li><a href="multimidia.html"><b>Vídeos</b></a></li>
+                <li><a href="faleconosco.html"><b>Fale Conosco</b></a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <hgroup id="faleConosco">
+            <h3>Fale Conosco</h3>
+            <h1>Formulário de Contato</h1>
+        </hgroup>
+
+        <form method="POST" id="formularioContato" action="mailto:robson.gmariano@hotmail.com">           <!--Tudo o que está entre form faz parte do formulário-->
+            <fieldset id="usuario"><legend style="font-weight: bold; font-size: 15pt;">Identifição do Usuário</legend> <!--fildset é um conjunto de campos-->
+            <p><label for="campoNome">Nome: </label><input type="text" name="textoNome" id="campoNome" size="30" maxlength="30" placeholder="Nome Completo" required="required"/></p>
+            <p><label for="campoEmail">E-mail: </label><input type="email" name="textoEmail" id="campoEmail" size="30" maxlength="30" placeholder="e-mail" required="required"/></p>
+            </fieldset>
+            <br>
+            <fieldset id="mensagem"><legend style="font-weight: bold; font-size: 15pt">Mensagem do Usuário</legend>
+                <p><label for="campoGrau" style="padding-right: 20px;">Grau de Urgência:</label>
+                Min<input type="range" name="textoGrau" id="campoGrau" min="0" max="10" step="1"/>Max</p> <!--step é de quanto em quanto de valor que pula-->
+                <p><label for="campoMensagem">Mensagem:</label>
+                <textarea name="textoMensagem" id="campoMensagem" cols="45" rows="5" placeholder="Deixe sua mensagem aqui"></textarea></p>
+
+                <input type="submit" class="enviar" onclick="Enviar();" value="Enviar"/>
+            </fieldset>
+    
+        </form>
+
+        <section id="contato">
+            <article id="formulario">
+                
+            </article>
+        </section>
+        <br>
+        <footer id="rodape">
+            <p>Copyright &copy; 2021 - by Robson G. Mariano <br/>
+            Este site foi criado como trabalho escolar. Atividade Ativa: Linguagem de Programação para Web.</p>
+        </footer>
+
+    </div>
+</body>
+</html>

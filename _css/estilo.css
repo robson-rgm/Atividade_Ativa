@@ -1,0 +1,287 @@
+@charset "UTF-8";
+
+body {
+    background-color:#e2e0e0;
+    font-family:arial;
+}
+
+div#interface {
+    margin: 12px auto auto auto;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+header#cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99; /*faz o menu ficar por cima de todos os outros elementos*/
+}
+
+nav#menu {
+    display:block;
+}
+nav#menu ul {
+    list-style: none;
+    position:absolute;
+    top: 25px;
+    left:300px;
+}
+nav#menu li {
+    display: inline-block;
+    background-color:transparent;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 0.5s;
+}
+nav#menu li:hover {
+    background-color: none;
+}
+nav#menu h1 {
+    display:none;
+}
+nav#menu a {
+    color:white;
+    text-decoration: none;
+}
+nav#menu a:hover {
+    color:greenyellow;
+}
+
+section#corpo {
+    display: block;
+    width: 600px;
+    float: left;
+    padding: 10px;
+}
+
+section#corpo h2 {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    text-align:center;
+    margin-bottom: 1px;
+    margin-top: 5px;
+}
+
+figure.selic {
+    display: block;
+    margin-top: 40px;
+    
+    box-shadow: 1px 1px 3px rgba(0,0,0,.8);
+    z-index:95;
+    -webkit-transition: all .4s ease-in;
+}
+
+figure.selic:hover {
+    -webkit-transform: scale(1.5);
+}
+
+figure.indices {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .8);
+    margin-top: 2px;
+    margin-left: 0px;
+}
+
+figure.indicadores1 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .8);
+    margin-top: 40px;
+    margin-left: 0px;
+}
+
+section#lateral1 {
+    display: block;
+    width: 610px;
+    float: right;
+    padding: 10px;
+    
+}
+
+section#lateral1 h2 {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    text-align:center;
+    margin-bottom: 1px;
+    margin-top: 5px;
+}
+
+figure.desemprego {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .8);
+    margin-top: 40px;
+    margin-left: 0px;
+}
+
+figure.ipca_15 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .8);
+    margin-top: 40px;
+    margin-left: 0px;
+}
+
+figure.contas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .8);
+    margin-top: 40px;
+    margin-left: 0px;
+}
+
+figure.imobiliario1 {
+    display: block;
+    width: 100%;
+    height: 150%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .8);
+    margin-top: 40px;
+    margin-left: 0px;
+    -webkit-transition: all .4s ease-in;
+}
+
+figure.imobiliario1:hover {
+    -webkit-transform: scale(1.5);
+}
+
+aside#lateral2 {
+    display:block;
+    width: 610px;
+    float: right;
+    padding: 10px;
+}
+
+aside#lateral2 h2 {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    text-align:center;
+    margin-bottom: 1px;
+    margin-top: 5px;
+}
+
+figure.atraso {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .8);
+    margin-top: 40px;
+    margin-left: 0px;
+}
+
+figure.imobiliario2 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .8);
+    margin-top: 40px;
+    margin-left: 0px;
+    -webkit-transition: all .4s ease-in;
+}
+
+figure.imobiliario2:hover {
+    -webkit-transform: scale(1.5);
+}
+
+section#corponoticias {
+    display: block;
+    width: 640px;
+    float: left;
+    padding: 10px;
+    margin-top:20px;
+    margin-left: 90px;
+}
+
+section#corponoticias article#noticia1 {
+    display: block;
+    margin-left: 130px;
+    margin-top: 20px;
+}
+
+section#corponoticias article#noticia2 {
+    display: block;
+    margin-left: 130px;
+    margin-top: 20px;
+}
+
+aside#lateralnoticias {
+    display: block;
+    width: 640px;
+    float:right;
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 80px;
+}
+
+section#indicadores {
+    display: block;
+    width: 640px;
+    float: left;
+    padding: 10px;
+    margin-top:20px;
+    margin-left: 200px;
+}
+
+section#indicadores figure {
+    margin-bottom: 40px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.7);
+    -webkit-transition: all .4s ease-in;
+}
+
+section#indicadores figure:hover {
+    -webkit-transform: scale(1.5);
+}
+
+aside#indicadoreslateral {
+    display: block;
+    width: 640px;
+    float:right;
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 200px;
+}
+
+aside#indicadoreslateral figure {
+    margin-bottom: 40px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.7);
+    -webkit-transition: all .4s ease-in;
+}
+
+aside#indicadoreslateral figure:hover {
+    -webkit-transform: scale(1.5);
+}
+
+article#videos {
+    display: block;
+    float: left;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+article#videos iframe {
+    padding: 30px
+}
+
+footer#rodape {
+    clear: both;
+    position:auto;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    }
+
+footer#rodape p {
+    text-align: center;
+}
+

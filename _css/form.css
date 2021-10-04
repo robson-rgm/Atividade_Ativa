@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+hgroup#faleConosco {
+    margin-top: 150px;
+    margin-left: 750px;
+    background: url("../_imagens/contato.png") no-repeat 35%;
+    padding: 20px 5px 20px 5px;
+}
+
+hgroup#faleConosco h3 {
+    padding-left: 130px;
+}
+
+form {
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+input, textarea {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgba(255,255,255,.8);
+}
+
+input:hover, textarea:hover {
+    background-color:#dddddd;
+}
+
+legend {
+    color: black;
+}
+
+fieldset {
+    border-color: #cecece;
+    margin: 8px;
+}
+
+fieldset#usuario {
+    background: url("../_imagens/icone-contato.png") no-repeat 95% 95%;
+}
+
+fieldset#mensagem {
+    background: url("../_imagens/icone-mensagem.png") no-repeat 95% 95%;
+}
+
+.enviar {
+    margin-left: 230px;
+    font-family: Arial, Helvetica, sans-serif;
+}

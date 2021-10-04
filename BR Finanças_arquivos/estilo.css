@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+body {
+    background-color:#e2e0e0;
+    font-family:arial;
+}
+
+div#interface {
+    margin: 12px auto auto auto;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+header#cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+nav#menu {
+    display:block;
+}
+nav#menu ul {
+    list-style: none;
+    position:absolute;
+    top: 25px;
+    left:300px;
+}
+nav#menu li {
+    display: inline-block;
+    background-color:transparent;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 0.5s;
+}
+nav#menu li:hover {
+    background-color: none;
+}
+nav#menu h1 {
+    display:none;
+}
+nav#menu a {
+    color:white;
+    text-decoration: none;
+}
+nav#menu a:hover {
+    color:greenyellow;
+}
+
+section#corpo {
+    display: block;
+    width: 600px;
+    float: left;
+    padding: 10px;
+}
+
+section#corpo h2 {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    text-align:center;
+    margin-bottom: 1px;
+    margin-top: 5px;
+}
+
+figure.selic {
+    display: block;
+    margin-top: 40px;
+    margin-left: 150px;
+}
+
+figure.indices {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+section#lateral1 {
+    display: block;
+    width: 610px;
+    float: right;
+    padding: 10px;
+    
+}
+
+section#lateral1 h2 {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    text-align:center;
+    margin-bottom: 1px;
+    margin-top: 5px;
+}
+
+aside#lateral2 {
+    display: block;
+    width: 610px;
+    float: right;
+    padding: 10px;
+}
+
+aside#lateral2 h2 {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    text-align:center;
+    margin-bottom: 1px;
+    margin-top: 5px;
+}
+
+footer#rodape {
+    clear: both;
+    position:auto;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    }
+
+footer#rodape p {
+    text-align: center;
+}
+
+section#corponoticias {
+    display: block;
+    width: 640px;
+    float: left;
+    padding: 10px;
+}
+
+aside#lateralnoticias {
+    display: block;
+    width: 640px;
+    float: right;
+    padding: 10px;
+    position: relative;
+}
+
