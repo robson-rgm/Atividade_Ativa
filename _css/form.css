@@ -1,18 +1,28 @@
 @charset "UTF-8";
 
+body {
+    background-color:#e2e0e0;
+    font-family:arial;
+    width: 100%;
+    max-width: 1080px;
+    min-height: 200px;
+    margin:auto;
+    
+}
+
 hgroup#faleConosco {
     margin-top: 150px;
-    margin-left: 750px;
-    background: url("../_imagens/contato.png") no-repeat 35%;
-    padding: 20px 5px 20px 5px;
+    margin-left: 250px;
+    background: url("../_imagens/contato.png") no-repeat 55%;
+    padding: 20px 50px 20px 5px;
 }
 
 hgroup#faleConosco h3 {
-    padding-left: 130px;
+    margin-left: 150px;
 }
 
 form {
-    width: 600px;
+    width: 100%;
     margin: auto;
     margin-top: 20px;
 }
@@ -48,4 +58,16 @@ fieldset#mensagem {
 .enviar {
     margin-left: 230px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+footer#rodape {
+    clear: both;
+    position:auto;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    }
+
+footer#rodape p {
+    text-align: center;
 }
